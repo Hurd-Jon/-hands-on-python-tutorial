@@ -47,8 +47,8 @@ ADD ./docker/db/* /opt/code/db/
 
 ## get the db ready
 RUN chmod +x /opt/code/db/prepare_db.sh
-RUN chmod +x /opt/code/db/start-progres.sh
-RUN chmod +x /opt/code/db/stop-progres.sh
+RUN chmod +x /opt/code/db/start_progres.sh
+RUN chmod +x /opt/code/db/stop_progres.sh
 RUN /opt/code/db/prepare_db.sh
 
 # Start the database in normal operation
