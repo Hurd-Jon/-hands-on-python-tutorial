@@ -1,0 +1,1 @@
+docker build -f ./docker/app/Dockerfile --tag thoughts-backend .
