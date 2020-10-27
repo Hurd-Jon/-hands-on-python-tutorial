@@ -45,8 +45,3 @@ jobs:
       - docker push jonhurd/thoughts-backend:$GIT_SHA
       - docker tag thoughts_server:latest jonhurd/thoughts-backend:$DOCKER_TAG
       - docker push jonhurd/thoughts-backend:$DOCKER_TAG
-      deploy:
-      - provider: script
-        script: docker push jonhurd/thoughts-backend:$TRAVIS_BRANCH
-        on:
-          branch: master        
