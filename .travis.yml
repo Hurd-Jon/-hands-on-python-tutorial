@@ -40,13 +40,13 @@ jobs:
       - docker-compose build server
       - docker tag thoughts_server:latest jonhurd/thoughts-backend:$GIT_SHA
       - docker push jonhurd/thoughts-backend:$GIT_SHA
-      - docker tag thoughts_server:latest jonhurd/thoughts-backend:$TRAVIS_BRANCH
+      - docker tag thoughts_server:latest jonhurd/thoughts-backend:1.$TRAVIS_BUILD_NUMBER
       deploy:
       - provider: script
         script: docker push jonhurd/thoughts-backend:$TRAVIS_BRANCH
         on:
           branch: master        
       - provider: script
-        script: docker push jonhurd/thoughts-backend:$TRAVIS_TAG
+        script: docker push jonhurd/thoughts-backend:1.$TRAVIS_BUILD_NUMBER
         on:
           tags: True
