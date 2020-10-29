@@ -44,3 +44,5 @@ Dependencies
 ------
 
 ThoughtsBackend uses Flask as a web framework, Flask RESTplus for creating the interface, and SQLAlchemy to handle the database models. It uses a SQLlite database for local development.
+
+x
