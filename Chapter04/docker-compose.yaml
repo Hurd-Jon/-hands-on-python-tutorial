@@ -9,8 +9,8 @@ services:
             dockerfile: docker/app/Dockerfile
             context: .
         entrypoint: pytest
-        volumes:
-            - ./ThoughtsBackend:/opt/code
+#        volumes:
+#            - ./ThoughtsBackend:/opt/code
 
     test-postgresql:
         env_file: environment.env
