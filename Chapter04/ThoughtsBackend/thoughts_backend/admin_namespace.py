@@ -24,5 +24,3 @@ class ThoughtsDelete(Resource):
         db.session.commit()
 
         return '', http.client.NO_CONTENT
-    
-BREAK_THE_BUILD_AGAIN
