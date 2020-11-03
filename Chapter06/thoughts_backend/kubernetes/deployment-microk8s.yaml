@@ -36,7 +36,7 @@ spec:
                       - name: POSTGRES_HOST
                         value: "127.0.0.1"
 
-                - name: thoughts-backend-db
-                  image: thoughts_backend_db:latest
+                - name: thoughts-db
+                  image: thoughts_db:latest
                   imagePullPolicy: Never
 
