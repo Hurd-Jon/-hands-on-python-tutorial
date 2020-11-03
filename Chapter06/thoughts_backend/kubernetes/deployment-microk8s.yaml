@@ -17,7 +17,7 @@ spec:
                 app: thoughts-backend
         spec:
             containers:
-                - name: jonhurd/thoughts-backend-service
+                - name: jonhurd/thoughts-backend
                   image: thoughts_server:latest
                   imagePullPolicy: IfNotPresent
                   ports:
