@@ -37,6 +37,6 @@ spec:
                         value: "127.0.0.1"
 
                 - name: thoughts-db
-                  image: thoughts_db:latest
-                  imagePullPolicy: Never
+                  image: jonhurd/thoughts_db:latest
+                  imagePullPolicy: IfNotPresent
 
