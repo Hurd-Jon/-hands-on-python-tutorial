@@ -9,8 +9,8 @@ services:
             dockerfile: docker/app/Dockerfile
             context: .
         entrypoint: pytest
-        volumes:
-            - ./UsersBackend:/opt/code
+#        volumes:
+#            - ./UsersBackend:/opt/code
 
     test-postgresql:
         env_file: environment.env
@@ -22,8 +22,8 @@ services:
         entrypoint: pytest
         depends_on:
             - db
-        volumes:
-            - ./UsersBackend:/opt/code
+ #       volumes:
+ #           - ./UsersBackend:/opt/code
 
     # Pipeline actions
     test:
