@@ -18,7 +18,7 @@ spec:
         spec:
             containers:
                 - name: users-backend-service
-                  image: johurd/users_backend:latest
+                  image: johurd/users-backend:latest
                   imagePullPolicy: IfNotPresent
                   ports:
                      - containerPort: 8000
@@ -37,5 +37,5 @@ spec:
                         value: "127.0.0.1"
 
                 - name: users-backend-db
-                  image: users_db:latest
+                  image: users-db:latest
                   imagePullPolicy: IfNotPresent
